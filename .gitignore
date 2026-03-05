@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+
+# Infrastructure
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# OS generated files
+.DS_Store
+Thumbs.db
