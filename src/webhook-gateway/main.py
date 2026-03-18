@@ -29,6 +29,10 @@ async def receive_github_webhook(request: Request):
     
     return {"status": "ignored", "message": "Not a push event"}
 
+@app.get("/ping")
+async def ping():
+    return "OK"
+
 if __name__ == "__main__":
     # Runs the server locally on port 8000
     uvicorn.run(app, host="0.0.0.0", port=8000)
